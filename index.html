@@ -56,6 +56,12 @@
 	sayMyName("Torben");
 	sayMyName("Troels"); */
 
+	const box = document.querySelector('.box');
+	box.addEventListener('click', (e) => {
+		const element = e.currentTarget;
+		element.textContent = "Privet";
+	});
+
 </script>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
